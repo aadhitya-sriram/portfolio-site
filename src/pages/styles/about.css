@@ -1,0 +1,67 @@
+.aboutPage {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  box-sizing: border-box;
+}
+
+.aboutCard {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  max-width: 1000px;
+  width: 100%;
+  border-radius: 20px;
+  background: rgba(0, 0, 0, 0.02);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  text-shadow: 0 2px 14px rgba(0,0,0,0.5);
+}
+
+.aboutImage {
+  display: flex;
+  align-items: center;
+  padding: 3vw;
+}
+
+.aboutImage img {
+  width: 100%;
+  max-width: 360px;
+  height: auto;
+  border-radius: 16px;
+  object-fit: cover;
+}
+
+.aboutText {
+  display: flex;
+  flex-direction: column;
+  padding: 3vw;
+  padding-left: 0px;
+  gap: 14px;
+}
+
+.aboutText h2 {
+  margin: 0;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.aboutText p {
+  margin: 0;
+  font-size: 20px;
+  line-height: 1.7;
+  opacity: 0.9;
+}
+
+@media (max-width: 900px) {
+  .aboutCard {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .aboutText {
+    align-items: center;
+  }
+}

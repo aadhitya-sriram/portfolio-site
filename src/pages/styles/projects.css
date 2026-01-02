@@ -1,0 +1,115 @@
+.projectsSection {
+  min-height: 100vh;
+}
+
+.pager {
+  margin-top: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+
+.pager button {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  background: transparent;
+  color: inherit;
+  padding: 6px 10px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.pager button:disabled {
+  opacity: 0.4;
+  cursor: default;
+}
+
+.projectsPager {
+  position: fixed;
+  bottom: 24px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  padding: 10px 16px;
+  border-radius: 14px;
+  background: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+  z-index: 20;
+}
+
+.projectsPager button {
+  background: rgba(0, 0, 0, 0.15);
+  color: inherit;
+  padding: 6px 12px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.projects-linkBtn {
+  text-decoration: none;
+  border: 1px solid var(--border);
+  padding: 4px 9px;
+  border-radius: 12px;
+  font-size: 12px;
+  color: var(--text);
+  background: rgba(0, 0, 0, 0.20);
+  cursor: pointer;
+}
+
+.projectsPager button:hover:not(:disabled) {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.projectsPager button:disabled {
+  opacity: 0.4;
+  cursor: default;
+}
+
+@media (max-width: 1200px) {
+  .stack {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .stack {
+    grid-template-columns: 1fr;
+  }
+}
+
+.slide-right {
+  max-height: 100vh;
+  animation: slideInFromRight 0.35s ease-out;
+}
+
+.slide-left {
+  max-height: 100vh;
+  animation: slideInFromLeft 0.35s ease-out;
+}
+
+@keyframes slideInFromRight {
+  from {
+    opacity: 0;
+    /* transform: translateX(40px); */
+  }
+  to {
+    opacity: 1;
+    /* transform: translateX(0); */
+  }
+}
+
+@keyframes slideInFromLeft {
+  from {
+    opacity: 0;
+    /* transform: translateX(-40px); */
+  }
+  to {
+    opacity: 1;
+    /* transform: translateX(0); */
+  }
+}

@@ -1,0 +1,154 @@
+.hero {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.heroContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.heroName {
+  font-size: 70px;
+  font-weight: 700;
+  line-height: 80px;
+  letter-spacing: -0.02em;
+  text-shadow: 0 2px 14px rgba(0,0,0,0.5);
+}
+
+.heroNameGrad {
+  background: linear-gradient(to bottom, #fee2e2, #ef4444, #a55959);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  text-shadow: none;
+}
+
+.heroLine {
+  font-size: 28px;
+  line-height: 1.25;
+  color: rgba(255,255,255,0.92);
+  text-shadow: 0 2px 14px rgba(0,0,0,0.75);
+}
+
+.heroActions {
+  position: relative;
+  top: 25vh;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.home-resumeBtn {
+  font-weight: 650;
+  font-size: 13px;
+  cursor: pointer;
+  border-radius: 14px;
+  padding: 12px 14px;
+  border: 1px solid var(--border);
+  background: rgba(255, 255, 255, 0.1);
+  color: var(--text);
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+}
+
+.socialRow {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  padding: 0;
+  opacity: 0.9;
+}
+
+.hero-overlay {
+  min-height: 100vh;
+  min-width: 100vw;
+  position: absolute;
+  z-index: 2;
+  background: rgba(0, 0, 0, 0.001);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  text-align: center;
+}
+
+.secondaryBtn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 14px;
+  padding: 12px 14px;
+  border: 1px solid var(--border);
+  background: transparent;
+  color: var(--text);
+  text-decoration: none;
+  font-weight: 650;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.primaryBtn:hover, .secondaryBtn:hover {
+  background: rgba(255, 255, 255, 0.08);
+  transform: translateY(-1px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.35);
+}
+
+.pill {
+  border: 1px solid var(--border);
+  padding: 8px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  opacity: 0.85;
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.pillIcon {
+  width: 50px;
+  height: 50px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(6px);
+  cursor: pointer;
+  text-decoration: none;
+  transition:
+    transform 0.2s ease,
+    background 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.pillIcon img {
+  width: 25px;
+  height: 25px;
+  object-fit: contain;
+  opacity: 0.85;
+}
+
+.pillIcon:hover {
+  background: rgba(255, 255, 255, 0.08);
+  transform: translateY(-1px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.35);
+}
+
+.pillIcon:hover img {
+  opacity: 1;
+}
+
+.pillIcon:focus-visible {
+  outline: 2px solid rgba(255, 255, 255, 0.4);
+  outline-offset: 2px;
+}
+
+.pillIcon--primary {
+  background: rgba(255, 255, 255, 0.1);
+}
