@@ -7,7 +7,7 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Projects from "./pages/Projects";
 import Experience from "./pages/Experience";
-import Publications from "./pages/Publications";
+// import Publications from "./pages/Publications";
 import Contact from "./pages/Contact";
 
 export default function App() {
@@ -20,7 +20,7 @@ export default function App() {
       { id: "/about", label: "About" },
       { id: "/projects", label: "Projects" },
       { id: "/experience", label: "Experience" },
-      { id: "/publications", label: "Publications" },
+      // { id: "/publications", label: "Publications" },
       { id: "/contact", label: "Contact" },
     ],
     []
@@ -47,7 +47,7 @@ export default function App() {
         <Route path="/about" element={<About />} />
         <Route path="/projects" element={<Projects />} />
         <Route path="/experience" element={<Experience />} />
-        <Route path="/publications" element={<Publications />} />
+        {/* <Route path="/publications" element={<Publications />} /> */}
         <Route path="/contact" element={<Contact />} />
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>

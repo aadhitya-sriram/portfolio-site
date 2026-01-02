@@ -64,14 +64,6 @@ export default function Navbar({ sections, activeId, onNavClick }) {
           </button>
 
         ))}
-
-        {/* <a
-          href="/Aadhitya_Sriram_Resume.pdf"
-          download
-          className="pillNav__item pillNav__resume"
-        >
-          Download Resume
-        </a> */}
       </nav>
     </div>
   );
