@@ -204,7 +204,7 @@ const fragmentShader = `
         float brightness = dot(diskCol, vec3(0.33, 0.33, 0.33));
         alpha = smoothstep(0.0, 0.1, brightness + length(col));
       } else {
-        float voidOpacity = 1.0 - smoothstep(5.0, 20.0, iCamDist);
+        float voidOpacity = 1.0 - smoothstep(5.0, 15.0, iCamDist);
         if(voidOpacity > 0.01) {
              vec2 p = uv * 8.0; 
              float t = iTime * 0.3;

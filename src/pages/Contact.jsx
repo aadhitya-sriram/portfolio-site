@@ -43,7 +43,7 @@ export default function Contact() {
       </div>
 
       <div className="contact-card">
-        <div className="contact-cardHeader">Message</div>
+        <div className="contact-cardHeader">Message Hello</div>
 
         <form ref={formRef} onSubmit={handleSubmit} className="form">
           <input name="name" className="input" placeholder="Name" required />
