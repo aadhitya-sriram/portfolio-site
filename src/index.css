@@ -23,6 +23,45 @@ body {
   margin: 0;
 }
 
+.snap-container {
+  height: 100vh;
+  width: 100vw;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.snap-container::-webkit-scrollbar {
+  display: none;
+}
+
+/* --- INDIVIDUAL SECTIONS --- */
+.section-container {
+  /* Force every section to be exactly one screen tall */
+  height: 100vh;
+  width: 100%;
+  
+  /* The snap point is the top of the div */
+  scroll-snap-align: start;
+  
+  /* Keep content centered */
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+
+
+
+
+
+
+
+
 /* ---------- Layout ---------- */
 .page {
   min-height: 100vh;

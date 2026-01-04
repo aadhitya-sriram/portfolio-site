@@ -23,6 +23,7 @@
 
 .heroNameGrad {
   background: linear-gradient(to bottom, #fee2e2, #ef4444, #a55959);
+  /* text-shadow: 0 2px 14px rgba(0,0,0,0.5); */
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -79,22 +80,7 @@
   text-align: center;
 }
 
-.secondaryBtn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 14px;
-  padding: 12px 14px;
-  border: 1px solid var(--border);
-  background: transparent;
-  color: var(--text);
-  text-decoration: none;
-  font-weight: 650;
-  font-size: 13px;
-  cursor: pointer;
-}
-
-.primaryBtn:hover, .secondaryBtn:hover {
+.home-resumeBtn:hover {
   background: rgba(255, 255, 255, 0.08);
   transform: translateY(-1px);
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.35);

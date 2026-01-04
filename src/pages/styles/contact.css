@@ -3,7 +3,6 @@
   z-index: 1;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  padding-top: 10%;
   padding-inline: 10%;
   gap: 48px;
 }
@@ -122,9 +121,22 @@
   text-align: center;
   border: 1px solid var(--border);
   border-radius: 18px;
-  background: rgba(255, 255, 255, 0.3);
+  background: rgba(0, 0, 0, 0.25);
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
   animation: fadeInUp 0.4s ease-out;
+}
+
+.contact-success h3 {
+  font-size: 30px;
+  margin: 0 0 6px 0;
+  font-weight: 650;
+}
+
+.contact-success p {
+  font-size: 20px;
+  text-shadow: 0 2px 14px rgba(0,0,0,0.85);
+  margin: 0;
+  opacity: 0.8;
 }
 
 @keyframes fadeInUp {
@@ -136,17 +148,4 @@
     opacity: 1;
     transform: translateY(0);
   }
-}
-
-.contact-success h3 {
-  color: rgb(82, 81, 81);
-  margin: 0 0 6px 0;
-  font-weight: 650;
-}
-
-.contact-success p {
-  color: rgb(82, 81, 81);
-  text-shadow: 0 2px 14px rgba(0,0,0,0.85);
-  margin: 0;
-  opacity: 0.8;
 }
