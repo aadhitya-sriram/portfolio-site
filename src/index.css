@@ -140,15 +140,6 @@ body {
   background: rgba(255, 255, 255, 0.03);
 }
 
-.card {
-  position: relative;
-  border: 1px solid var(--border);
-  border-radius: 18px;
-  padding: 16px;
-  background: rgba(0, 0, 0, 0.2);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
-}
-
 .cardHeader {
   font-weight: 750;
   font-size: 13px;

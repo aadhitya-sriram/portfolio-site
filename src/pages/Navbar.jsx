@@ -5,7 +5,6 @@ export default function Navbar({ sections, activeId, onNavClick }) {
   const navRef = useRef(null);
   const itemRefs = useRef({});
   const [pill, setPill] = useState({ left: 0, width: 0 });
-
   const measure = () => {
     const navEl = navRef.current;
     const buttonEl = itemRefs.current[activeId];
@@ -25,12 +24,10 @@ export default function Navbar({ sections, activeId, onNavClick }) {
     });
   };
 
-  // Measure after first paint and whenever activeId changes
   useLayoutEffect(() => {
     measure();
   }, [activeId, sections.length]);
 
-  // Re-measure on resize (responsive widths)
   useEffect(() => {
     const onResize = () => measure();
     window.addEventListener("resize", onResize);
@@ -40,7 +37,6 @@ export default function Navbar({ sections, activeId, onNavClick }) {
   return (
     <div className="navbar">
       <nav className="pillNav" ref={navRef}>
-        {/* sliding highlight */}
         <span
           className="pillNav__activePill"
           style={{
