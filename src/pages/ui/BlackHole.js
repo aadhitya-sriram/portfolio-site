@@ -124,6 +124,7 @@ const fragmentShader = `
       ro.yz *= rot(mY + 0.1);
       ro.xz *= rot(mX);
       vec3 ta = vec3(0.0, 0.0, 0.0);
+      
       vec3 w = normalize(ta - ro);
       vec3 u = normalize(cross(w, vec3(0.0, 1.0, 0.0)));
       vec3 v = cross(u, w);
