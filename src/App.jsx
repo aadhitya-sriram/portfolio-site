@@ -2,7 +2,7 @@ import { useMemo, useEffect, useRef, useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import { initBlackHole } from "./pages/ui/BlackHole";
 import StarBackground from './pages/ui/StarBackground';
-import Navbar from "./components/Navbar";
+import Navbar from "./pages/Navbar";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Projects from "./pages/Projects";

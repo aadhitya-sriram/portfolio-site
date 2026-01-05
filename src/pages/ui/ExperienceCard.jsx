@@ -13,7 +13,7 @@ export function ExperienceCard({
   imageCount
 }) {
   return (
-    <div className="card experienceCard experienceSplit">
+    <div className="experienceCard">
       <ExperienceGallery dir={imageDir} count={imageCount} />
 
       <div className="experienceText">

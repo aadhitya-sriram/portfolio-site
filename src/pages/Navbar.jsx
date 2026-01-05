@@ -1,5 +1,5 @@
-import React, { useEffect, useLayoutEffect, useRef, useState } from "react";
-import "./../pages/styles/navbar.css";
+import { useEffect, useLayoutEffect, useRef, useState } from "react";
+import "./styles/navbar.css";
 
 export default function Navbar({ sections, activeId, onNavClick }) {
   const navRef = useRef(null);

@@ -65,7 +65,7 @@ export const experiences = [
       "Flask"
     ],
     imageDir: "sarvam",
-    imageCount: 2
+    imageCount: 4
   },
   {
     org: "CloverBridge Technologies",
@@ -87,7 +87,7 @@ export const experiences = [
       "Web Applications"
     ],
     imageDir: "cbridge",
-    imageCount: 2
+    imageCount: 1
   }
 ];
 
@@ -116,7 +116,6 @@ export default function Experience() {
       <div className={`experienceStage slide-${direction}`} key={index}>
         <ExperienceCard {...experiences[index]} />
       </div>
-
       <div className="projectsPager">
         <button className="experienceNav left" onClick={prev} disabled={index === 0}>
           &lt;
@@ -125,7 +124,6 @@ export default function Experience() {
           &gt;
         </button>
       </div>
-
     </div>
   );
 }

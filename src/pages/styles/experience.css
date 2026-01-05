@@ -1,11 +1,10 @@
 .experienceSection {
-  min-height: 100vh;
+  height: 100vh;
   padding: 120px 10% 134px;
   box-sizing: border-box;
   display: flex;
   align-items: center;
   justify-content: center;
-  position: relative;
 }
 
 .experienceStage {
@@ -16,15 +15,34 @@
 }
 
 .experienceCard {
+  display: grid;
+  grid-template-columns: 1fr 1.3fr;
+  gap: 32px;
   width: 70vw;
-  padding: 28px;
-  border-radius: 20px;
+  padding: 32px;
+  border-radius: 24px;
+  position: relative;
+  border: 1px solid var(--border);
+  background: rgba(0, 0, 0, 0.2);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+  align-items: stretch;
+  max-height: calc(100vh - 120px - 134px);
+  overflow: hidden;
+}
+
+.galleryImage {
+  position: static;
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  animation: fadeIn 0.6s ease;
 }
 
 .experienceText {
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  /* gap: 16px; */
   height: 100%;
 }
 
@@ -35,7 +53,7 @@
 }
 
 .experienceTitle {
-  font-size: 14px;
+  font-size: 1.9vh;
   font-weight: 600;
   letter-spacing: 0.02em;
   text-transform: uppercase;
@@ -43,20 +61,21 @@
 }
 
 .experienceOrg {
-  font-size: 26px;
+  font-size: 4vh;
   font-weight: 750;
   line-height: 1.2;
   letter-spacing: -0.01em;
 }
 
 .experienceMeta {
-  font-size: 13px;
+  font-size: 1.85vh;
   opacity: 0.65;
   margin-top: 4px;
 }
 
 .experienceParagraph {
-  font-size: 20px;
+  padding-top: 2%;
+  font-size: 2.6vh;
   line-height: 1.7;
   opacity: 0.9;
   max-width: 60ch;
@@ -75,28 +94,12 @@
   border-top: 1px solid rgba(255,255,255,0.08);
 }
 
-.experienceSplit {
-  display: grid;
-  grid-template-columns: 1fr 1.3fr;
-  gap: 28px;
-  padding: 28px;
-  align-items: stretch;
-}
-
 .experienceGallery {
   position: relative;
   width: 100%;
   height: 100%;
   border-radius: 16px;
   overflow: hidden;
-}
-
-.galleryImage {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
 }
 
 .experienceNav {
