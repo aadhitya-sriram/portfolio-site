@@ -21,6 +21,20 @@
   text-shadow: 0 2px 14px rgba(0,0,0,0.5);
 }
 
+.workinprog:hover {
+  animation: spinWiggle 420ms ease-in-out;
+}
+
+@keyframes spinWiggle {
+  0%   { transform: rotate(0deg); }
+  15%  { transform: rotate(-4deg); }
+  30%  { transform: rotate(4deg); }
+  45%  { transform: rotate(-3deg); }
+  60%  { transform: rotate(3deg); }
+  75%  { transform: rotate(-1.5deg); }
+  100% { transform: rotate(0deg); }
+}
+
 .heroNameGrad {
   background: linear-gradient(to bottom, #fee2e2, #ef4444, #a55959);
   /* text-shadow: 0 2px 14px rgba(0,0,0,0.5); */

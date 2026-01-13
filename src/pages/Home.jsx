@@ -7,7 +7,7 @@ export default function Home() {
       <div className="heroContent">
         <div className="hero-inner">
           <div style={{position: 'absolute', top: '20px', right: '20px', zIndex: 9999, width: '150px'}}>
-            <img src='workinprog.png' alt="Work in Progress" style={{ width: '100%', height: 'auto', borderRadius: '8px' }} />
+            <img className='workinprog' src='workinprog.png' alt="Work in Progress" style={{ width: '100%', height: 'auto', borderRadius: '8px' }} />
           </div>
           <h1 className="heroName">
             Hi, I’m <span className="heroNameGrad">Aadhitya Sriram.</span>
